@@ -196,7 +196,7 @@ python scripts/eval_baselines.py --metals Cu
 ```bibtex
 @article{minetrace2026,
   title  = {MineTrace: Traceable Mineral Prospectivity for Grounded Geoscience Agents},
-  author = {Ding, Yihao and others},
+  author = {Grant, Zhang and others},
   year   = {2026},
   eprint = {2609.02060},
   url    = {https://arxiv.org/pdf/2609.02060}
