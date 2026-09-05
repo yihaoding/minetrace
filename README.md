@@ -206,21 +206,11 @@ attribution (error 0.0 on 9/9 commodities), the expert it names as dominant is
 the one whose removal costs the most (Hit@1 0.904), and every number in the
 generated narrative resolves to a field of the record (lookup failure 0.00).
 
-**Prefer it in particular when the explanation must describe the deposit rather
+**Prefer expert tree in particular when the explanation must describe the deposit rather
 than the training sample.** At 0.631 it holds its attribution best of the five
 models under bootstrap resampling — the decision tree, whose explanations look
 the tidiest at 2.1 features, keeps only 0.351 of its top-3 and is also the
 weakest extrapolator at 0.573.
-
-**Prefer it where coverage is uneven.** An expert whose data source is missing
-at a query point abstains, the remaining weights renormalise, and `confidence`
-falls with the evidence actually available (0.97 → 0.38 as six of seven sources
-are withheld); a fixed-width model must impute the missing columns and answers
-in the same tone regardless.
-
-**Treat every model with caution for greenfield search.** Under the spatial
-split all five fall to 0.57–0.74, and on Mn the expert tree scores below chance
-(0.269) because the learned direction inverts in the northern region.
 
 **If you want both, score with the forest and explain with the expert tree.**
 Nothing in this repository prevents that pairing, and we have not evaluated it;
