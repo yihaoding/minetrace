@@ -1,0 +1,717 @@
+{
+  "metals": [
+    "Cu",
+    "Au",
+    "Ni",
+    "W",
+    "Sn",
+    "Co",
+    "Ta",
+    "Mn",
+    "REE"
+  ],
+  "results": {
+    "Cu": {
+      "additivity": {
+        "leaf_recon_err_mean": 2.954087177970685e-19,
+        "leaf_recon_err_max": 2.220446049250313e-16,
+        "root_recon_err_mean": 0.0,
+        "root_recon_err_max": 0.0,
+        "n_inverted_experts": 0,
+        "inverted_experts": [],
+        "narrative_view_gap_mean": 0.0,
+        "narrative_view_gap_max": 0.0
+      },
+      "deletion": {
+        "fractions": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9
+        ],
+        "auc_attr_order": [
+          0.9246666666666667,
+          0.8518333333333333,
+          0.8533333333333333,
+          0.8241666666666667,
+          0.7803333333333333,
+          0.8003333333333333,
+          0.7436666666666667,
+          0.625,
+          0.5808333333333333,
+          0.5840000000000001
+        ],
+        "auc_random_order": [
+          0.9246666666666666,
+          0.9273333333333333,
+          0.9293888888888889,
+          0.9217222222222222,
+          0.9132777777777777,
+          0.9035555555555557,
+          0.8908333333333335,
+          0.8719444444444444,
+          0.8315555555555556,
+          0.7722222222222221
+        ],
+        "faithfulness_gap_mean": 0.1464814814814815
+      },
+      "ablation_consistency": {
+        "n_claimed": 30,
+        "hit_at_1": 1.0,
+        "hit_at_2": 1.0
+      },
+      "z_sanity": {
+        "n_z_values": 21734,
+        "frac_abs_z_gt4": 0.013159105548909542,
+        "frac_abs_z_gt6": 0.00593540075457808,
+        "frac_abs_z_gt10": 0.0017944234839422104,
+        "frac_abs_z_gt20": 0.0005521303027514493,
+        "max_abs_z": 77.62168980623328,
+        "leaf_saturation_frac": 0.0013882461823229986,
+        "narrative_weight_miss_frac": 0.0
+      },
+      "deposit_types": {
+        "SITE_TYPE_": {
+          "Mine": 26,
+          "Deposit": 4
+        },
+        "SITE_SUB_T_nonempty": 0,
+        "n_test_pos": 30
+      },
+      "n_scored": 230
+    },
+    "Au": {
+      "additivity": {
+        "leaf_recon_err_mean": 3.3596134357837603e-19,
+        "leaf_recon_err_max": 2.220446049250313e-16,
+        "root_recon_err_mean": 0.0,
+        "root_recon_err_max": 0.0,
+        "n_inverted_experts": 0,
+        "inverted_experts": [],
+        "narrative_view_gap_mean": 0.0,
+        "narrative_view_gap_max": 0.0
+      },
+      "deletion": {
+        "fractions": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9
+        ],
+        "auc_attr_order": [
+          0.9583333333333334,
+          0.8725,
+          0.8123333333333332,
+          0.8056666666666666,
+          0.8043333333333333,
+          0.7946666666666667,
+          0.771,
+          0.6768333333333333,
+          0.6395000000000001,
+          0.40275
+        ],
+        "auc_random_order": [
+          0.9583333333333334,
+          0.9543333333333331,
+          0.9493333333333333,
+          0.9501666666666666,
+          0.9306111111111112,
+          0.9283888888888888,
+          0.9196666666666667,
+          0.8993888888888888,
+          0.8729444444444444,
+          0.8085
+        ],
+        "faithfulness_gap_mean": 0.18152777777777773
+      },
+      "ablation_consistency": {
+        "n_claimed": 30,
+        "hit_at_1": 0.9666666666666667,
+        "hit_at_2": 1.0
+      },
+      "z_sanity": {
+        "n_z_values": 20815,
+        "frac_abs_z_gt4": 0.01263511890463608,
+        "frac_abs_z_gt6": 0.006485707422531828,
+        "frac_abs_z_gt10": 0.00269036752342061,
+        "frac_abs_z_gt20": 0.0009608455440787893,
+        "max_abs_z": 774.8036917832776,
+        "leaf_saturation_frac": 0.0023277467411545625,
+        "narrative_weight_miss_frac": 0.0
+      },
+      "deposit_types": {
+        "SITE_TYPE_": {
+          "Mine": 21,
+          "Deposit": 9
+        },
+        "SITE_SUB_T_nonempty": 0,
+        "n_test_pos": 30
+      },
+      "n_scored": 230
+    },
+    "Ni": {
+      "additivity": {
+        "leaf_recon_err_mean": 2.3237226096805604e-19,
+        "leaf_recon_err_max": 2.220446049250313e-16,
+        "root_recon_err_mean": 0.0,
+        "root_recon_err_max": 0.0,
+        "n_inverted_experts": 0,
+        "inverted_experts": [],
+        "narrative_view_gap_mean": 0.0,
+        "narrative_view_gap_max": 0.0
+      },
+      "deletion": {
+        "fractions": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9
+        ],
+        "auc_attr_order": [
+          0.9941666666666666,
+          0.961,
+          0.9626666666666667,
+          0.9375,
+          0.9036666666666667,
+          0.909,
+          0.8608333333333333,
+          0.7739999999999999,
+          0.6153333333333333,
+          0.6375
+        ],
+        "auc_random_order": [
+          0.9941666666666666,
+          0.9937777777777778,
+          0.9925555555555556,
+          0.9907222222222223,
+          0.9892222222222222,
+          0.9855555555555555,
+          0.9821666666666666,
+          0.9806111111111111,
+          0.9611111111111112,
+          0.9087777777777778
+        ],
+        "faithfulness_gap_mean": 0.13588888888888892
+      },
+      "ablation_consistency": {
+        "n_claimed": 30,
+        "hit_at_1": 0.9,
+        "hit_at_2": 0.9666666666666667
+      },
+      "z_sanity": {
+        "n_z_values": 17456,
+        "frac_abs_z_gt4": 0.017529789184234645,
+        "frac_abs_z_gt6": 0.0068744271310724105,
+        "frac_abs_z_gt10": 0.0026924839596700273,
+        "frac_abs_z_gt20": 0.00028643446379468377,
+        "max_abs_z": 72.54511621336309,
+        "leaf_saturation_frac": 0.0027906976744186047,
+        "narrative_weight_miss_frac": 0.0
+      },
+      "deposit_types": {
+        "SITE_TYPE_": {
+          "Mine": 20,
+          "Deposit": 10
+        },
+        "SITE_SUB_T_nonempty": 0,
+        "n_test_pos": 30
+      },
+      "n_scored": 230
+    },
+    "W": {
+      "additivity": {
+        "leaf_recon_err_mean": 3.4925107018716343e-19,
+        "leaf_recon_err_max": 1.1102230246251565e-16,
+        "root_recon_err_mean": 0.0,
+        "root_recon_err_max": 0.0,
+        "n_inverted_experts": 0,
+        "inverted_experts": [],
+        "narrative_view_gap_mean": 0.0,
+        "narrative_view_gap_max": 0.0
+      },
+      "deletion": {
+        "fractions": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9
+        ],
+        "auc_attr_order": [
+          0.9359999999999999,
+          0.9018333333333334,
+          0.8991666666666667,
+          0.7676666666666667,
+          0.7386666666666667,
+          0.7725,
+          0.7646666666666666,
+          0.8055000000000001,
+          0.8286666666666668,
+          0.5081666666666667
+        ],
+        "auc_random_order": [
+          0.9359999999999999,
+          0.9286666666666666,
+          0.920611111111111,
+          0.9259444444444443,
+          0.9132777777777777,
+          0.8971666666666667,
+          0.8977222222222223,
+          0.8731666666666666,
+          0.8574444444444445,
+          0.7354444444444445
+        ],
+        "faithfulness_gap_mean": 0.10695679012345675
+      },
+      "ablation_consistency": {
+        "n_claimed": 30,
+        "hit_at_1": 0.9666666666666667,
+        "hit_at_2": 0.9666666666666667
+      },
+      "z_sanity": {
+        "n_z_values": 17627,
+        "frac_abs_z_gt4": 0.019572247120894084,
+        "frac_abs_z_gt6": 0.007375049639757191,
+        "frac_abs_z_gt10": 0.0030067510069779315,
+        "frac_abs_z_gt20": 0.0008509672661258297,
+        "max_abs_z": 72.54511621336309,
+        "leaf_saturation_frac": 0.001899335232668566,
+        "narrative_weight_miss_frac": 0.0
+      },
+      "deposit_types": {
+        "SITE_TYPE_": {
+          "Mine": 26,
+          "Deposit": 4
+        },
+        "SITE_SUB_T_nonempty": 0,
+        "n_test_pos": 30
+      },
+      "n_scored": 230
+    },
+    "Sn": {
+      "additivity": {
+        "leaf_recon_err_mean": 2.5792051681189936e-19,
+        "leaf_recon_err_max": 2.220446049250313e-16,
+        "root_recon_err_mean": 0.0,
+        "root_recon_err_max": 0.0,
+        "n_inverted_experts": 0,
+        "inverted_experts": [],
+        "narrative_view_gap_mean": 0.0,
+        "narrative_view_gap_max": 0.0
+      },
+      "deletion": {
+        "fractions": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9
+        ],
+        "auc_attr_order": [
+          0.9891666666666667,
+          0.9671666666666666,
+          0.9541666666666667,
+          0.9505,
+          0.9498333333333333,
+          0.9176666666666666,
+          0.8468333333333333,
+          0.8041666666666667,
+          0.7308333333333333,
+          0.45316666666666666
+        ],
+        "auc_random_order": [
+          0.9891666666666667,
+          0.9867777777777778,
+          0.9819444444444444,
+          0.9766666666666667,
+          0.9731111111111111,
+          0.9718333333333332,
+          0.964111111111111,
+          0.9406666666666667,
+          0.9125,
+          0.863
+        ],
+        "faithfulness_gap_mean": 0.11069753086419751
+      },
+      "ablation_consistency": {
+        "n_claimed": 30,
+        "hit_at_1": 0.8,
+        "hit_at_2": 1.0
+      },
+      "z_sanity": {
+        "n_z_values": 14300,
+        "frac_abs_z_gt4": 0.01041958041958042,
+        "frac_abs_z_gt6": 0.003286713286713287,
+        "frac_abs_z_gt10": 0.0006993006993006993,
+        "frac_abs_z_gt20": 0.0002097902097902098,
+        "max_abs_z": 72.54511621336309,
+        "leaf_saturation_frac": 0.0038369304556354917,
+        "narrative_weight_miss_frac": 0.0
+      },
+      "deposit_types": {
+        "SITE_TYPE_": {
+          "Mine": 26,
+          "Deposit": 4
+        },
+        "SITE_SUB_T_nonempty": 0,
+        "n_test_pos": 30
+      },
+      "n_scored": 230
+    },
+    "Co": {
+      "additivity": {
+        "leaf_recon_err_mean": 6.04512536827515e-19,
+        "leaf_recon_err_max": 1.6653345369377348e-16,
+        "root_recon_err_mean": 0.0,
+        "root_recon_err_max": 0.0,
+        "n_inverted_experts": 0,
+        "inverted_experts": [],
+        "narrative_view_gap_mean": 0.0,
+        "narrative_view_gap_max": 0.0
+      },
+      "deletion": {
+        "fractions": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9
+        ],
+        "auc_attr_order": [
+          0.983,
+          0.9495,
+          0.8916666666666666,
+          0.8121666666666667,
+          0.7735000000000001,
+          0.7293333333333333,
+          0.6228333333333333,
+          0.6361666666666668,
+          0.5666666666666665,
+          0.5608333333333333
+        ],
+        "auc_random_order": [
+          0.983,
+          0.9777777777777779,
+          0.9769444444444444,
+          0.9765,
+          0.9669444444444445,
+          0.9567777777777776,
+          0.9476666666666667,
+          0.9307777777777778,
+          0.8773888888888889,
+          0.8013333333333333
+        ],
+        "faithfulness_gap_mean": 0.20771604938271604
+      },
+      "ablation_consistency": {
+        "n_claimed": 30,
+        "hit_at_1": 0.8666666666666667,
+        "hit_at_2": 0.9666666666666667
+      },
+      "z_sanity": {
+        "n_z_values": 14747,
+        "frac_abs_z_gt4": 0.017223842137383875,
+        "frac_abs_z_gt6": 0.006645419407337086,
+        "frac_abs_z_gt10": 0.0025089848782803284,
+        "frac_abs_z_gt20": 0.00047467281480979183,
+        "max_abs_z": 72.54511621336309,
+        "leaf_saturation_frac": 0.00234192037470726,
+        "narrative_weight_miss_frac": 0.0
+      },
+      "deposit_types": {
+        "SITE_TYPE_": {
+          "Deposit": 17,
+          "Mine": 13
+        },
+        "SITE_SUB_T_nonempty": 0,
+        "n_test_pos": 30
+      },
+      "n_scored": 230
+    },
+    "Ta": {
+      "additivity": {
+        "leaf_recon_err_mean": 0.0,
+        "leaf_recon_err_max": 0.0,
+        "root_recon_err_mean": 0.0,
+        "root_recon_err_max": 0.0,
+        "n_inverted_experts": 0,
+        "inverted_experts": [],
+        "narrative_view_gap_mean": 0.0,
+        "narrative_view_gap_max": 0.0
+      },
+      "deletion": {
+        "fractions": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9
+        ],
+        "auc_attr_order": [
+          0.9531666666666667,
+          0.9436666666666667,
+          0.8916666666666666,
+          0.7986666666666667,
+          0.7861666666666667,
+          0.7034999999999999,
+          0.7005,
+          0.5395,
+          0.5941666666666666,
+          0.5885
+        ],
+        "auc_random_order": [
+          0.9531666666666667,
+          0.949,
+          0.9476666666666667,
+          0.9431111111111111,
+          0.9333888888888889,
+          0.9253888888888889,
+          0.9166666666666666,
+          0.8925555555555555,
+          0.8597222222222222,
+          0.7851666666666667
+        ],
+        "faithfulness_gap_mean": 0.17848148148148146
+      },
+      "ablation_consistency": {
+        "n_claimed": 30,
+        "hit_at_1": 0.9666666666666667,
+        "hit_at_2": 1.0
+      },
+      "z_sanity": {
+        "n_z_values": 8700,
+        "frac_abs_z_gt4": 0.007816091954022988,
+        "frac_abs_z_gt6": 0.003218390804597701,
+        "frac_abs_z_gt10": 0.001264367816091954,
+        "frac_abs_z_gt20": 0.0004597701149425287,
+        "max_abs_z": 72.54511621336309,
+        "leaf_saturation_frac": 0.0011396011396011395,
+        "narrative_weight_miss_frac": 0.0
+      },
+      "deposit_types": {
+        "SITE_TYPE_": {
+          "Mine": 22,
+          "Deposit": 8
+        },
+        "SITE_SUB_T_nonempty": 0,
+        "n_test_pos": 30
+      },
+      "n_scored": 230
+    },
+    "Mn": {
+      "additivity": {
+        "leaf_recon_err_mean": 1.0708037318248066e-19,
+        "leaf_recon_err_max": 1.1102230246251565e-16,
+        "root_recon_err_mean": 0.0,
+        "root_recon_err_max": 0.0,
+        "n_inverted_experts": 1,
+        "inverted_experts": [
+          "geology_structure"
+        ],
+        "narrative_view_gap_mean": 0.0,
+        "narrative_view_gap_max": 0.0
+      },
+      "deletion": {
+        "fractions": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9
+        ],
+        "auc_attr_order": [
+          0.8288333333333333,
+          0.766,
+          0.7625000000000001,
+          0.6503333333333333,
+          0.6396666666666666,
+          0.5358333333333334,
+          0.4453333333333333,
+          0.4096666666666666,
+          0.431,
+          0.5223333333333333
+        ],
+        "auc_random_order": [
+          0.8288333333333333,
+          0.8177777777777777,
+          0.816,
+          0.8160555555555556,
+          0.7973333333333333,
+          0.7787777777777777,
+          0.7806111111111113,
+          0.7582222222222222,
+          0.7068333333333333,
+          0.6497777777777778
+        ],
+        "faithfulness_gap_mean": 0.19541358024691358
+      },
+      "ablation_consistency": {
+        "n_claimed": 30,
+        "hit_at_1": 0.7,
+        "hit_at_2": 0.9333333333333333
+      },
+      "z_sanity": {
+        "n_z_values": 10466,
+        "frac_abs_z_gt4": 0.008408178864895853,
+        "frac_abs_z_gt6": 0.003535257022740302,
+        "frac_abs_z_gt10": 0.0017198547678196063,
+        "frac_abs_z_gt20": 0.00038218994840435696,
+        "max_abs_z": 72.54511621336309,
+        "leaf_saturation_frac": 0.004181913225300575,
+        "narrative_weight_miss_frac": 0.0
+      },
+      "deposit_types": {
+        "SITE_TYPE_": {
+          "Mine": 17,
+          "Deposit": 13
+        },
+        "SITE_SUB_T_nonempty": 0,
+        "n_test_pos": 30
+      },
+      "n_scored": 230
+    },
+    "REE": {
+      "additivity": {
+        "leaf_recon_err_mean": 0.0,
+        "leaf_recon_err_max": 0.0,
+        "root_recon_err_mean": 0.0,
+        "root_recon_err_max": 0.0,
+        "n_inverted_experts": 1,
+        "inverted_experts": [
+          "worm_structure"
+        ],
+        "narrative_view_gap_mean": 0.0,
+        "narrative_view_gap_max": 0.0
+      },
+      "deletion": {
+        "fractions": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9
+        ],
+        "auc_attr_order": [
+          0.8063333333333333,
+          0.7246666666666667,
+          0.8026666666666666,
+          0.7196666666666666,
+          0.6106666666666667,
+          0.5696666666666667,
+          0.47433333333333333,
+          0.5025,
+          0.5455,
+          0.4728333333333333
+        ],
+        "auc_random_order": [
+          0.8063333333333333,
+          0.811888888888889,
+          0.8031666666666667,
+          0.7857777777777777,
+          0.7623888888888889,
+          0.7666666666666666,
+          0.7432777777777777,
+          0.7151666666666666,
+          0.6598888888888889,
+          0.6455
+        ],
+        "faithfulness_gap_mean": 0.1412469135802469
+      },
+      "ablation_consistency": {
+        "n_claimed": 30,
+        "hit_at_1": 0.9666666666666667,
+        "hit_at_2": 1.0
+      },
+      "z_sanity": {
+        "n_z_values": 7740,
+        "frac_abs_z_gt4": 0.008656330749354004,
+        "frac_abs_z_gt6": 0.002842377260981912,
+        "frac_abs_z_gt10": 0.0009043927648578811,
+        "frac_abs_z_gt20": 0.0003875968992248062,
+        "max_abs_z": 72.54511621336309,
+        "leaf_saturation_frac": 0.000625,
+        "narrative_weight_miss_frac": 0.0
+      },
+      "deposit_types": {
+        "SITE_TYPE_": {
+          "Deposit": 20,
+          "Mine": 10
+        },
+        "SITE_SUB_T_nonempty": 0,
+        "n_test_pos": 30
+      },
+      "n_scored": 230
+    }
+  },
+  "config": {
+    "SEED": 42,
+    "MAX_TEST": 30,
+    "N_NEG": 200,
+    "deletion_fractions": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "n_random_orders": 3,
+    "layers": [
+      "geochem",
+      "geophys",
+      "structure"
+    ]
+  }
+}

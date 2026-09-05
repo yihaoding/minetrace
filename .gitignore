@@ -1,0 +1,68 @@
+# ── data (68 GB; obtain via scripts/download_datasets.sh) ────────────────────
+datasets/
+models/
+demo/datasets/
+demo/models/
+*.zip
+
+# ── caches, logs, scratch ───────────────────────────────────────────────────
+.cache/
+logs/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ── large or intermediate artefacts ─────────────────────────────────────────
+*.npy
+*.npz
+*.tif
+*.tiff
+*.parquet
+notebooks/pipeline_outputs/
+reports/figures/
+reports/ablation_logs/
+reports/archive_prefix_20260515/
+reports/baseline_pre_ipfix/
+reports/qld/
+*.png
+*.html
+
+# ── working drafts not intended for release ─────────────────────────────────
+papers/
+others/
+demo/paper/
+demo/sessions/
+demo/case_studies/
+
+# ── exploratory notebooks with embedded outputs (not part of the release) ───
+notebooks/
+meta3.xml
+ids_all.txt
+
+# ── head-to-head baseline analysis: unpublished, pending author decision ────
+reports/eval_baselines*.json
+reports/eval_baselines.md
+reports/eval_explanation_quality.json
+reports/eval_confidence.json
+reports/eval_degradation.json
+reports/summary_table.*
+reports/why_expert_tree.*
+reports/expert_vs_baselines_table.*
+reports/scoring_explained.*
+reports/method_v4_*.md
+reports/pipeline_v4_integrated.md
+reports/related_work*
+reports/iclr_novelty_assessment*
+reports/final_method_design_for_confirmation.md
+reports/agent_*.md
+reports/decisions_pending*
+reports/eval_baselines.pdf
+reports/*.log
+reports/eval_scores*.json
+reports/phase*
+reports/stage2_narrative_demo.md
+reports/geochem_agent_demo.md
+reports/method_readable.md
+reports/eval_explq_smoke*.json
+scripts/smoke_claude_cli.sh
