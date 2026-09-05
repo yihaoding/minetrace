@@ -159,6 +159,72 @@ Please observe each provider's own licence and attribution requirements; they
 are not covered by this repository's MIT licence.
 
 ---
+## What this is optimised for, and what it is not
+
+This code is designed for **traceability, not for leaderboard accuracy.**
+We state that plainly because the distinction determines whether the system is
+the right tool for a given job — and we report the numbers that show it.
+
+Every comparison below uses **identical conditions**: the same positives, the
+same held-out split, the same seeds, and baselines restricted to the same 195
+features the ten experts read. Baselines: a depth-4 decision tree, a
+500-tree random forest, XGBoost (400 trees, depth 4), and L1-regularised
+logistic regression.
+
+### Performance and attribution stability, side by side
+
+Mean over nine commodities. AUC columns: four negative-sampling strategies.
+Attribution stability: how much of a query point's top-3 attribution survives
+refitting on a bootstrap resample of the training data (Jaccard, 10 resamples).
+
+| Model | random | far-random | true-nonmine | **spatial** | **attribution stability** |
+|---|---|---|---|---|---|
+| **Expert tree (this repo)** | 0.906 | 0.930 | 0.800 | 0.673 | **0.631** |
+| Decision tree | 0.931 | 0.929 | 0.827 | 0.573 | 0.351 |
+| **Random forest** | **0.998** | **0.995** | **0.941** | **0.735** | 0.582 |
+| XGBoost | 0.995 | 0.993 | 0.929 | 0.724 | 0.498 |
+| L1-logistic | 0.977 | 0.978 | 0.857 | 0.729 | 0.597 |
+
+The first three AUC columns hold out deposits at random; because deposits
+cluster and features are 5/10/50 km neighbourhood statistics, they measure
+near-mine (brownfield) ranking. `spatial` trains on the south and tests on the
+north, 235–622 km apart, and is the only extrapolation test.
+
+### Which one to use
+
+**Use a random forest when the output is a ranked drill list and nothing else
+has to be justified.** It is the most accurate model in every one of the four
+settings, best in 26 of the 36 commodity × scenario cells against the expert
+tree's one, and its vote margin is also the best available guide to which of
+its own predictions are wrong (ρ = +0.707 against error, versus −0.049 for our
+`confidence`).
+
+**Use the expert tree when the score has to survive being questioned.** Its
+explanation is the scoring computation itself rather than a post-hoc
+approximation — the reported score reconstructs exactly from its own
+attribution (error 0.0 on 9/9 commodities), the expert it names as dominant is
+the one whose removal costs the most (Hit@1 0.904), and every number in the
+generated narrative resolves to a field of the record (lookup failure 0.00).
+
+**Prefer it in particular when the explanation must describe the deposit rather
+than the training sample.** At 0.631 it holds its attribution best of the five
+models under bootstrap resampling — the decision tree, whose explanations look
+the tidiest at 2.1 features, keeps only 0.351 of its top-3 and is also the
+weakest extrapolator at 0.573.
+
+**Prefer it where coverage is uneven.** An expert whose data source is missing
+at a query point abstains, the remaining weights renormalise, and `confidence`
+falls with the evidence actually available (0.97 → 0.38 as six of seven sources
+are withheld); a fixed-width model must impute the missing columns and answers
+in the same tone regardless.
+
+**Treat every model with caution for greenfield search.** Under the spatial
+split all five fall to 0.57–0.74, and on Mn the expert tree scores below chance
+(0.269) because the learned direction inverts in the northern region.
+
+**If you want both, score with the forest and explain with the expert tree.**
+Nothing in this repository prevents that pairing, and we have not evaluated it;
+it is the obvious next experiment rather than a result.
 
 ## Reproducing the evaluation
 
